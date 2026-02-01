@@ -1,0 +1,120 @@
+* {
+    margin: 5px 5px 5px 5px;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #191970;
+    color: antiquewhite;
+}
+
+img {
+    width: 30%;
+    margin: 0;
+}
+
+.topdiv {
+    margin-top: 150px;
+}
+
+.left {
+    margin-left: 10%;
+    margin-right: 50%;
+    text-align: left;
+}
+
+.right {
+    margin-right: 10%;
+    margin-left: 50%;
+    text-align: right;
+}
+
+.furtherright {
+    margin-left: 80%;
+}
+
+.imageright {
+    margin-left: 70%;
+}
+
+h1 {
+    color: #80D12E;
+    font-size: 550%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1000;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h3 {
+    color: lightgreen;
+    font-size: 150%;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #D12E7F;
+    font-size: 250%;
+}
+
+p {
+    color: linen;
+    font-weight: lighter;
+    font-size: 150%;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    kerning: 20%;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 30;
+    margin-left: 5%;
+    color: lightgreen;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h6{
+    font-weight: normal;
+    font-size: 30;
+    color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #49e60b;
+}
+
+a:hover {
+    text-decoration: underline;
+     color: #49e60b;
+   
+}
+
+a:visited {
+    color: hotpink;
+}
+
+.toosmall {
+    width: 40%;
+    margin-right: 70%;
+}
+
+.alsotoosmall {
+    margin-left: 65%;
+    width: 40%;
+}
+
+.source {
+    margin-left: 5%;
+}
