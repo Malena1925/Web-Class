@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: darkslategray;
+    color: whitesmoke;
+
+    background-image: url(Images/100.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    
+    position: relative;
+}
+
+h1 {
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+#content {
+    width: 80vw;
+    height: 100vh;
+}
+
+.text1 {
+    position: absolute;
+    bottom: 60px;
+    font-optical-sizing: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    width: 80vw;
+}
+
+.text2 {
+    position: absolute;
+    bottom: 60px;
+    font-optical-sizing: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    width: 80vw;
+    display: none;
+}
+
+.text3 {
+     position: absolute;
+    bottom: 60px;
+    font-optical-sizing: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    width: 80vw;
+    display: none;
+}
+
+.text4 {
+    position: absolute;
+    bottom: 60px;
+    font-optical-sizing: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    width: 80vw;
+    display: none;
+}
+
+.text5 {    
+    position: absolute;
+    bottom: 60px;
+    font-optical-sizing: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    width: 80vw;
+    display: none;
+}
+
+#end {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    animation: backgroundchange 8s infinite;
+    position: absolute;
+    background-color: darkslategray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes backgroundchange {
+    0% {
+        background-image: url(Images/50hover.png);
+    }
+
+    20% {
+        background-image: url(Images/a1.png)
+    }
+
+    40% {
+        background-image: url(Images/a2.png);
+    }
+
+    60% {
+        background-image: url(Images/a3.png);
+    }
+
+    80% {
+        background-image: url(Images/a4.png);
+    }
+
+    90% {
+        background-image: url(Images/a5.png);
+    }
+
+    100% {
+        background-image: url(Images/a5.png);
+    }
+}
+
+
+.text6 {    
+    position: absolute;
+    bottom: 60px;
+    font-optical-sizing: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    width: 80vw;
+    display: none;
+    animation: disappear 8s infinite;
+    z-index: 998;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.text7 {
+    position: absolute;
+    bottom: 60px;
+    font-optical-sizing: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    width: 80vw;
+    display: none;
+    animation: appear 8s infinite;
+    z-index: 999;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+        body {
+            background-image: url(Images/100click.png);
+        }
+        .text1 {
+            display: none;
+        }
+
+        .text2 {
+            display: block;
+        }
+
+        .text3 {
+            display: none;
+        }
+
+        .text4 {
+            display: none;
+        }
+
+        .text5 {
+            display: none;
+        }
+
+        .text6 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1800px) {
+        body {
+            background-image: url(Images/75.png);
+        }
+        .text1 {
+            display: none;
+        }
+
+        .text2 {
+            display: none;
+        }
+
+        .text3 {
+            display: block;
+        }
+
+        .text4 {
+            display: none;
+        }
+
+        .text5 {
+            display: none;
+        }
+
+        .text6 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1600px) {
+        body {
+            background-image: url(Images/50.png);
+        }
+        .text1 {
+            display: none;
+        }
+
+        .text2 {
+            display: none;
+        }
+
+        .text3 {
+            display: none;
+        }
+
+        .text4 {
+            display: block;
+        }
+
+        .text5 {
+            display: none;
+        }
+
+        .text6 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        body {
+            background-image: url(Images/50hover.png);
+        }
+        .text1 {
+            display: none;
+        }
+
+        .text2 {
+            display: none;
+        }
+
+        .text3 {
+            display: none;
+        }
+
+        .text4 {
+            display: none;
+        }
+
+        .text5 {
+            display: block;
+        }
+
+        .text6 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        #content {
+            display: none;
+        }
+        
+        .text1 {
+            display: none;
+        }
+
+        .text2 {
+            display: none;
+        }
+
+        .text3 {
+            display: none;
+        }
+
+        .text4 {
+            display: none;
+        }
+
+        .text5 {
+            display: none;
+        }
+
+        .text6 {
+            display: block;
+            animation: disappear 8s infinite;
+        }
+
+        .text7 {
+            display: block;
+            animation: appear 8s infinite;
+        }
+
+        #end {
+            display: block;
+            animation: backgroundchange 8s infinite;
+            animation-fill-mode: forwards;
+        }
+
+    }
