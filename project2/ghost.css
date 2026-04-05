@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(14, 28, 25);
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+
+#forest {
+    background-image: url(images/forest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    animation: leaf 3.5s 10s linear;
+}
+
+.wakingup {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/dark.GIF);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9999999999999;
+    animation: fade 8s 0s forwards;
+}
+
+.redbutton {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 5px;
+    left: 5px;
+    background-image: url(images/redbutton.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forest .redbutton {
+    display: none;
+}
+
+.pinkbutton {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 10px;
+    right: 10px;
+    background-image: url(images/pinkbutton.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.starbutton {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 10px;
+    right: 10px;
+    background-image: url(images/starbutton.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    opacity: 0;
+    position: absolute;
+}
+
+#forest h2 {
+    opacity: 0.8;
+}
+
+.dark {
+    width: 80%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    margin: auto 10% auto 10%;
+    position: absolute;
+    color: antiquewhite;
+}
+
+@keyframes leaf {
+    100% {
+        background-image: url(images/leaf.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+#moon {
+    background-image: url(images/moon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#time {
+    background-color: rgb(14, 28, 25);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.watchface {
+    background-image: url(images/fullwatch.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 800px;
+    height: 800px;
+    margin: 10px auto 10px auto;
+    position: absolute;
+    z-index: 800;
+    animation: rotate 10s 0s infinite;
+}
+
+.right {
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    margin: auto 10% auto 50%;
+    position: absolute;
+    color: antiquewhite;
+}
+
+@keyframes rotate {
+     100% {
+        transform: rotate(360deg);
+    }
+}
+
+#cold {
+    background-color: rgb(14, 28, 25);
+    width: 100vw;
+    height: 100vh;
+}
+
+.mittens {
+    position: absolute;
+    left: -250px;
+}
+
+.mitten {
+    background-image: url(images/mitten.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 95vw;
+    height: 95vh;
+    position: absolute;
+}
+
+.mitten2 {
+    background-image: url(images/mitten.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 95vw;
+    height: 95vh;
+    position: absolute;
+    transform: rotate(5deg);
+}
+
+.mitten2:hover {
+    transform: rotate(15deg);
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+column-gap: 5px;
+row-gap: 5px;
+margin: 20px;
+}
+
+.parent img {
+    width: 75%;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; animation: sway 5s 0s infinite;}
+.div2 { grid-area: 2 / 2 / 3 / 3;}
+.div3 { grid-area: 1 / 3 / 2 / 4;}
+.div4 { grid-area: 2 / 4 / 3 / 5; animation: rock 2s 0s infinite alternate;}
+.div5 { grid-area: 1 / 5 / 2 / 6;}
+.div6 { grid-area: 3 / 1 / 4 / 2;}
+.div7 { grid-area: 3 / 3 / 4 / 4;}
+.div8 { grid-area: 3 / 5 / 4 / 6; animation: rotate 7s 0s infinite reverse;}
+
+@keyframes rock {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(5deg);}
+    50% {transform: rotate(10deg);}
+    75% {transform: rotate(15deg);}
+    100% {transform: rotate(20deg);}
+}
+
+@keyframes sway {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.div5 img:hover {
+    background-image: url(images/shuffle.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div6:hover {
+    transform: rotate(90deg);
+}
+
+.div2:hover {
+    transform: rotate(-45deg);
+}
+
+.div3:hover {
+    transform: rotate(-15deg);
+}
+
+.div7:hover{
+    animation: rotate 5s 0s infinite;
+}
+
+#lost {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/dark.GIF);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.middle {
+    width: 80%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10% auto 10%;
+    bottom: 50%;
+    position: absolute;
+    color: antiquewhite;
+}
+
+#sheet {
+    background-image: url(images/sheetbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.sheettree {
+    background-image: url(images/sheet.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    animation: sheet 5s 0s infinite alternate;
+}
+
+.sheettext {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    background-image: url(images/sheet.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10% auto 10%;
+    bottom: 60%;
+    position: absolute;
+    color: antiquewhite;
+}
+
+@keyframes sheet {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(2deg);}
+    50% {transform: rotate(-4deg);}
+    75% {transform: rotate(0deg);}
+    100% {transform: rotate(2deg);}
+}
+
+#sheet2 {
+    background-image: url(images/sheetbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 99998;
+    animation: looking 5s 7s infinite;
+}
+
+#eyes {
+    background-image: url(images/shut.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 99999;
+    animation: openeyes 3s 3s forwards;
+}
+
+@keyframes openeyes {
+    100% {background-image: url(images/open.png);}
+}
+
+@keyframes looking {
+    25% {left: 25px;}
+    50% {bottom: 25px;}
+    75% {right: 50px;}
+    100% {top: 50px;}
+}
+
+#reflection {
+    background-image: url(images/lake.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ghost {
+    background-image: url(images/reflection.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1410px) {
+    .right {
+        width: 80%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 50px;
+        margin: auto 10% auto 10%;
+        position: absolute;
+        color: antiquewhite;
+    }
+    .watchface {
+        width: 600px;
+        height: 600px;
+        left: 30%;
+    }
+
+    .mittens {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    }
+
+    .parent img {
+        width: 60%;
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 2 / 2 / 3 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 2 / 4 / 3 / 5; }
+    .div5 { grid-area: 3 / 3 / 4 / 4; }
+    .div6 { grid-area: 3 / 1 / 4 / 2; }
+    .div7 { grid-area: 4 / 2 / 5 / 3; }
+    .div8 { grid-area: 4 / 4 / 5 / 5; }
+
+    #trinkets h2 {
+        width: 60%;
+        font-size: 20px;
+    }
+}
