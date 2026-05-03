@@ -706,7 +706,7 @@ a:hover {
     transform: rotate(-90deg);
     padding: 5%;
     top: 100%;
-    left: 20%;
+    left: 5%;
     animation: hint 7s 0s infinite;
 }
 
