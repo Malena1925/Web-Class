@@ -701,12 +701,12 @@ a:hover {
 
 .hands {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     transform: rotate(-90deg);
     padding: 5%;
     top: 100%;
-    left: 25%;
+    left: 27%;
     animation: hint 7s 0s infinite;
 }
 
