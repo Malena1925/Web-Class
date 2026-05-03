@@ -222,7 +222,7 @@ header a {
 
 .ingredientlistpret {
     width: 70%;
-    height: 112vh;
+    height: 110vh;
     margin: 0 auto 0 auto;
     background-color: rgba(44, 28, 16, 0.458);
     border-radius: 25px;
@@ -705,7 +705,7 @@ a:hover {
     height: 350px;
     transform: rotate(-90deg);
     padding: 5%;
-    top: 100%;
+    top: 90%;
     left: 5%;
     animation: hint 7s 0s infinite;
 }
